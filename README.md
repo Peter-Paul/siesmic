@@ -1,2 +1,2 @@
 # siesmic
-Dapp For Siesmic
+Dapp And API For Siesmic
