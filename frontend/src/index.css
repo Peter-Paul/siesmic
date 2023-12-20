@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-image{
+  background: url(../public/bg.png) no-repeat center top/cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.transparent-bg{
+  background: transparent;
+}
+
+.logo-holder {
+  width: 80px;
+  height: 80px;
+  min-height: 80px;
+  position: relative;
+  border-radius: 200px;
+}
+.logo-img{
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.token-holder {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  position: relative;
+  border-radius: 200px;
+}
+.token-img{
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.token-sm-holder {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  position: relative;
+  border-radius: 200px;
+}
+.token-sm-img{
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.centered{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn-custom{
+  background-color: #efdb64;
+  border-color: #efdb64;
+}
+
+.btn-custom:disabled{
+  background-color: #c2af47;
+  border-color: #c2af47;
+}
+
+.btn-custom:hover{
+  background-color: #c2af47;
+  border-color: #c2af47;
+}
+
+.bg-custom{
+  background-color: #efdb64;
+} 
+
+.text-custom{
+  color: #efdb64;
+}
+
+.color-custom{
+  color: #efdb64;
+} 
+
+
+.modal-custom{
+  background:transparent!important;
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+
+.modal-content{
+  /* justify-content: center; */
+  /* width: 50% !important; */
+  border-radius: 20px !important;
+}
+
+.modal-list{
+  border-radius: 20px;
+}
+
+.modal-list:hover{
+  background-color: #efdb64;
+  border-color: #efdb64;
+  color: white;
+}
+
+
+.custom-light-bg{
+  background-color: #f1efe8;
+}
+
+input[type='checkbox']:checked {
+  background-color: #efdb64;
+  border-color: #efdb64;
+}
