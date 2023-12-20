@@ -17,7 +17,7 @@ function AppLayout() {
         setAllTokens(tokens)
     } ,[setAllTokens])
     return (
-        <div className="bg-image">
+        <div >
             <div className="container">
                 <Router>
                     <div>

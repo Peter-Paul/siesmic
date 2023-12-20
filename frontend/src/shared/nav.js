@@ -22,7 +22,7 @@ function Nav() {
                     </div>
                 </div>
 
-                <w3m-button />
+                <w3m-core-button />
 
             </div>
         </nav>
