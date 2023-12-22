@@ -13,7 +13,7 @@ function Auth({isConnected}) {
                     <h5 className="card-title text-center">Welcome!</h5>
                     <p className="card-text text-center">Swap your stable coin for Siesmic token</p>
                     <div className="d-flex justify-content-center mt-auto">
-                        <w3m-core-button />
+                        <w3m-button />
                     </div>
                 </div>
             </div>

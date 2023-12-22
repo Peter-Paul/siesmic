@@ -13,13 +13,13 @@ function AppLayout() {
     const [allTokens,
         setAllTokens] = useState(tokens)
 
-    useEffect( () => {
+    useEffect(() => {
         setAllTokens(tokens)
-    } ,[setAllTokens])
+    }, [setAllTokens])
     return (
-        <div >
-            <div className="container">
-                <Router>
+        <Router>
+            <div className="bg-image">
+                <div className="container">
                     <div>
                         {/* NAVIGATION */}
                         <div className='sticky-top' hidden={isDisconnected}>
@@ -58,9 +58,9 @@ function AppLayout() {
                             {/* <Footer /> */}
                         </div>
                     </div>
-                </Router>
+                </div>
             </div>
-        </div>
+        </Router>
     );
 }
 
