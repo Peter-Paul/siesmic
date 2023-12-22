@@ -6,7 +6,7 @@ function TokenModal({show, handleClose, allTokens, setSelectedToken}) {
     return (
 
         <Modal // size="sm" 
-    variant={"dark"}  show={show} backdrop="static" onHide={handleClose} className='modal-custom'>
+    variant={"dark"} show={show} backdrop="static" onHide={handleClose} className='modal-custom'>
 
             <div className="modal-header">
                 <h1 className="modal-title fs-5" id="exampleModalLabel">Select A Token</h1>
@@ -31,7 +31,12 @@ function TokenModal({show, handleClose, allTokens, setSelectedToken}) {
                     handleClose={handleClose}/>
             </div>
             <div className='modal-footer d-flex justify-content-center'>
-                <button className="btn btn-custom" style={{fontWeight:"bold"}} onClick={handleClose}>
+                <button
+                    className="btn btn-custom"
+                    style={{
+                    fontWeight: "bold"
+                }}
+                    onClick={handleClose}>
                     Close
                 </button>
             </div>

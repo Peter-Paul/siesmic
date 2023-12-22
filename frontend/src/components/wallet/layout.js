@@ -74,7 +74,8 @@ function WalletLayout({selectedToken, allTokens, setSelectedToken}) {
                 className="card-header py-3 custom-light-bg"
                 style={{
                 borderTopLeftRadius: "20px",
-                borderTopRightRadius: "20px"
+                borderTopRightRadius: "20px",
+                borderBottom: "none"
             }}>
                 <h4>Deposit</h4>
                 <p>Deposit stable token to your SCB Wallet</p>
@@ -105,9 +106,9 @@ function WalletLayout({selectedToken, allTokens, setSelectedToken}) {
 
                         <i
                             onClick={handleShow}
-                            className="fa fa-chevron-down ms-2"
+                            className="fa fa-chevron-down mt-1 ms-1"
                             style={{
-                            fontSize: "20px"
+                            fontSize: "13px"
                         }}></i>
                     </div>
                     <div>
@@ -116,22 +117,25 @@ function WalletLayout({selectedToken, allTokens, setSelectedToken}) {
                 </div>
 
                 <div className="my-3">
-                    <input
-                        onChange={(e) => setSwapAmount(e.target.value)}
-                        value={swapAmount}
-                        style={{
-                        height: "80px",
-                        textAlign: "right",
-                        fontWeight: "bold"
-                    }}
-                        type="text"
-                        className="form-control"
-                        placeholder="0.0"
-                        aria-describedby="help"/>
+                    <div className="custom-light-bg p-2" style={{height:"16vh",borderRadius:"20px"}}>
+                        <input
+                            onChange={(e) => setSwapAmount(e.target.value)}
+                            value={swapAmount}
+                            style={{
+                            textAlign: "right",
+                            fontWeight: "bold",
+                            fontSize:"25px",
+                            background:"transparent",
+                        }}
+                            type="text"
+                            className="form-control input-custom"
+                            placeholder="0.0"
+                            aria-describedby="help"/>
 
-                    <div hidden={balance < swapAmount && swapAmount > 0}>
-                        {/* <div id="help" className="form-text">Expected to receive: {converted} SCB</div> */}
-                        <h6>{`1 ${selectedToken.name} = ${rate} SCB`}</h6>
+                        <div hidden={balance < swapAmount && swapAmount > 0}>
+                            {/* <div id="help" className="form-text">Expected to receive: {converted} SCB</div> */}
+                            <h6 className="text-center my-2">{`1 ${selectedToken.name} = ${rate} SCB`}</h6>
+                        </div>
                     </div>
                 </div>
 

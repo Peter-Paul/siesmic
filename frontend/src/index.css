@@ -38,9 +38,9 @@ code {
 }
 
 .token-holder {
-  width: 30px;
-  height: 30px;
-  min-height: 30px;
+  width: 23px;
+  height: 23px;
+  min-height: 23px;
   position: relative;
   border-radius: 200px;
 }
@@ -130,4 +130,21 @@ code {
 input[type='checkbox']:checked {
   background-color: #efdb64;
   border-color: #efdb64;
+}
+
+.input-custom{
+  border: 0px;
+}
+
+input:focus, input.form-control:focus {
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+h1,h2,h3,h4,h5,h6,p, .btn-custom, .text-custom, .color-custom, .modal-list{
+  font-family: "Jost";
 }
